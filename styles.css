@@ -15,85 +15,60 @@ a {
     text-decoration: none;
 }
 
-.pokemonBio {
-    width: 150px;
-}
-
-.pokedex {
-    background-color: rgb(236,43,53);
-    width: 350px;
-    height: 500px;
+.pokemon-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.pokemon-card {
+    width: 220px;
+    padding: .5rem;
+    margin: .5rem;
+    background: rgb(242, 194, 64);
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
     justify-content: space-between;
-    align-items: stretch;
+    border-radius: .4rem;
+    border: .6rem silver solid;
 }
 
-.display-container {
+.card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container {
     width: 100%;
-    padding: 1rem;
-
-}
-
-.display {
-    background: rgb(111,188,187);
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.display-options {
+    height: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
     display: flex;
-}
-
-.pokemonBio {
-    min-width: 100%;
-    text-align: center;
-}
-
-.controls {
-    display: flex;
-    height: 6rem;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    border: 2px silver solid;
+    border-radius: 5px;
 }
 
-.constrols .left-buttons,
-.constrols .center-buttons,
-.constrols .right-buttons {
-    height: 5rem;
-}
-
-a.arrow-button {
-    background: black;
-    color: aliceblue;
-    height: 2rem;
-    width: 2rem;
+.image-container img {
+    margin:0 auto;
     padding: .5rem;
-    margin: .2rem;
-    text-align: center;
+    width: 100%;
+    object-fit: cover;
 }
 
-.option-button {
-    background: black;
-    color: aliceblue;
-    padding: .3rem .5rem;
-    border-radius: .35rem;
+.card-skills {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.action-button {
-    background: black;
-    color: aliceblue;
-    width: 1rem;
-    height: 1rem;
-    padding: .5rem .6rem;
-    border-radius: 50%;
+
+.card-skills div {
+    width: 50%;
 }
+
